@@ -28,6 +28,13 @@ class ItemCard extends StatelessWidget {
               ),
             );
           }
+          else if (item.name == "Lihat Mood") {
+            Navigator.push(context,
+            MaterialPageRoute(
+            builder: (context) => const MoodEntryPage()
+              ),
+    );
+}
         },
         child: Container(
           padding: const EdgeInsets.all(8),
